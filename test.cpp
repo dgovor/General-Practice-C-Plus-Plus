@@ -5,6 +5,8 @@ float temper[] = {31.5, 32.7, 38.9};
 
 int main()
 {
+    std::cout << "This is a testing ground repo. Please find my full projects in pinned repos." << std::endl;
+
     age[0] = 25;
     age[1] = 20;
     age[2] = 19;
