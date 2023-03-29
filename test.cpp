@@ -1,24 +1,34 @@
 #include <iostream>
-#include <cstdint>
+#include <string>
 
 #define DEBUG
-#define ARRAY_SIZE 5
+
+enum cow_purpose
+{
+    dairy,
+    meat,
+    hide,
+    pet
+};
+
+struct cow
+{
+    std::string name;
+    int age;
+    unsigned char purpose;
+};
 
 int main()
 {
     std::cout << "This is a testing ground repo. Please find my full projects in pinned repos." << std::endl;
 
-    float average;
-    int new_array[ARRAY_SIZE] = {3, 7, 12, 15, 34};
-
-    for (int i = 0; i < ARRAY_SIZE; i++)
-    {
-        average += new_array[i];
-    }
-    average /= ARRAY_SIZE;
+    cow my_cow;
+    my_cow.age = 5;
+    my_cow.name = "Betsy";
+    my_cow.purpose = dairy;
 
 #ifdef DEBUG
-    std::cout << "Average of the array = " << average << std::endl;
+    std::cout << my_cow.name << " is a type-" << (int)my_cow.purpose << " cow." << std::endl;
 #endif
 
     return (0);
