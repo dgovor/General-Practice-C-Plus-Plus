@@ -59,5 +59,6 @@ int main()
     std::cout << my_cow.get_name() << " is " << my_cow.get_age() << " years old and is a type-" << (int)my_cow.get_purpose() << " cow." << std::endl;
 #endif
 
+
     return (0);
 }
