@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include "cow.h"
-
 #define DEBUG
 
 int main()
