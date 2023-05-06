@@ -19,7 +19,6 @@ unsigned char cow::get_purpose()
 {
     return purpose;
 }
-
 void cow::set_name(std::string n)
 {
     name = n;
