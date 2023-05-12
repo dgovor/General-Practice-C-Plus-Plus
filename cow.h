@@ -1,5 +1,6 @@
 #ifndef COW_H
 #define COW_H
+
 #include <string>
 
     enum cow_purpose{dairy, meat, hide, pet};
